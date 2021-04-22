@@ -33,8 +33,11 @@ p {
     color: #020202;
 }
 a {
-    text-decoration: none;
-    color: #383838;
+    color: #494949;
+}
+a:visited {
+    color: #666666;
+    text-decoration: underline;
 }
 #navigation {
     background-color: lightblue;
