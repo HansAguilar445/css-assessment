@@ -1,7 +1,7 @@
 h1 {
     font-family: Helvetica, Calibri, sans-serif;
     color: #020202;
-    margin: 0px 5% 5px;
+    margin: 3px 5% 5px;
     font-size: 36px;
     opacity: 1;
     font-weight: bold;
@@ -36,10 +36,21 @@ a {
     text-decoration: none;
     color: #383838;
 }
+#navigation {
+    background-color: lightblue;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+}
 #background {
+    z-index: 0;
     background-color: whitesmoke;
-    opacity: 0.98;
-    margin: 5% 10%;
+    opacity: 0.97;
+    margin: 8.5% 10% 5%;
     padding: 20px;
 }
 #nav-bar {
@@ -83,4 +94,8 @@ figure {
 }
 li p {
     margin: 05px;
+}
+.minor-categories {
+    font-weight: bold;
+    font-size: 18px;
 }
