@@ -11,7 +11,8 @@ h2 {
     color: #020202; 
     font-family: Verdana, Tahoma, sans-serif;
     margin: 10px 5% 5px;
-    font-size: 28px;    
+    font-size: 28px;
+    animation: 3s slide;    
 }
 h3 {
     color: #020202; 
@@ -101,4 +102,27 @@ li p {
 .minor-categories {
     font-weight: bold;
     font-size: 18px;
+}
+#star {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transform: rotate(0deg);
+    transition: transform 2s ease, right 2s ease;
+}
+#star:hover {
+    transform: rotate(180deg);
+    right: 6px;
+}
+@keyframes slide{
+    from {
+        padding-left: 8em;
+        opacity: 0;
+    }
+    to {
+        padding-left: 0;
+        opacity: 1;
+    }
+
 }
